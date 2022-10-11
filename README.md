@@ -1,5 +1,7 @@
 #  🪙 CryptoOasys 🪙
 
+Projeto FIAP - 43SCJ / WEBSERVICES & RESTFUL TECHNOLOGIES / EDUARDO FERREIRA GALEGO
+
 CryptoOasys é uma plataforma para favoritar, monitorar informações sobre suas cripto‑
 moedas favoritas e fazer notas sobre cada uma.
 
