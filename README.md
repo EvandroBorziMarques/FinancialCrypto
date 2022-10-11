@@ -2,8 +2,7 @@
 
 Projeto FIAP - 43SCJ / WEBSERVICES & RESTFUL TECHNOLOGIES / EDUARDO FERREIRA GALEGO
 
-CryptoOasys é uma plataforma para favoritar, monitorar informações sobre suas cripto‑
-moedas favoritas e fazer notas sobre cada uma.
+CryptoOasys é uma plataforma para favoritar, monitorar informações sobre suas cripto‑moedas favoritas e fazer notas sobre cada uma.
 
 ## Features
 
@@ -14,6 +13,9 @@ moedas favoritas e fazer notas sobre cada uma.
 - Favoritar moeda :heavy_check_mark:
 - Modificar anotação :heavy_check_mark:
 - Remover favorito :heavy_check_mark:
+
+## API Consumida (Paprika API)
+- https://api.coinpaprika.com/
 
 ## Tech Stack
 
@@ -28,10 +30,9 @@ Tecnologias usadas para construir a aplicação
 
 - Java (jdk-11.0.2) | Spring Boot, JPA, Hibernate, JUnit, Swagger, OpenFeign (Spring Cloud), Devtools, Maven (3.8.5), Lombok, Validators
 - Postgres
-- Redis (Cache)
+- Redis (Cache/ Login)
 - Docker
 - Docker Compose
-- Github Features (Issues, Pull Requests)
 
 ### :hot_pepper: Lombok:
 Como instalar o Lombok para sua IDE disponível em: https://projectlombok.org/setup/overview
@@ -63,6 +64,11 @@ Vai rodar três containers:
 - Container Postgres database (postgres-db) |  localhost:15432
 - Container Redis database (redis-db) |  redis:6379
 - Container Java backend  (java-app) | localhost:8080
+
+## Documentação
+- Swagger disponível em: http://localhost:8080/swagger-ui.html
+- Arquivo Postman disponível na raiz do projeto: cryptoOasys.postman_collection.json 
+- No arquivo do Postman é possível bater na API consumida pelo backend da PAPRIKA API
 
 ## 📊 Postgres Database Tables
 
