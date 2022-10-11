@@ -40,15 +40,20 @@ Como instalar o Lombok para sua IDE disponível em: https://projectlombok.org/se
 
 Para iniciar a aplicação local, execute os seguintes comandos na raiz do projeto:
 
-1º:
-```bash
-mvn clean install
-```
-2º:
+
+1º - Buildar imagens Docker
 ```bash
 docker-compose build --no-cache
 ```
-3º
+2º - Subir o postgres
+```bash
+docker-compose up db
+```
+3º - Clean install no backend
+```bash
+mvn clean install
+```
+4º - Subir o projeto
 ```bash
 docker-compose up
 ```
@@ -90,11 +95,4 @@ Vai rodar três containers:
 | userLoggedName          | String       | Nome do usuário logado |
 | userLoggedNick          | String       | Apelido do usuário logado |
 
-## ✍️ Author
-
- [<img src="https://github.com/KaiqueJuvencio.png" width="130px;"/><br /><sub>**Kaique Juvencio**</sub>](https://github.com/KaiqueJuvencio)<br /> 
- 
- <h2>Reach me out 👇🏼</h2>
-
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/kaiquejuvencio/)](https://www.linkedin.com/in/kaiquejuvencio/) [![Gmail Badge](https://img.shields.io/badge/-kaiquejuvenciocosta@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:kaiquejuvenciocosta@gmail.com)](mailto:kaiquejuvenciocosta@gmail.com)
 
